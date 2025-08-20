@@ -12,16 +12,11 @@ def count_words(text):
 # Use a dictionary of String -> Integer. The returned dictionary should look something like this:
 def get_num_characters(text):
     characters_dict = {}
-    get_words = text.lower().split()
+    get_words = text
     for word in get_words:
-        print(word)
-        for character in word:
-            print(character)
+        for character in word.lower():
             if character in characters_dict:
                 characters_dict[character] += 1 
             else:
                 characters_dict[character] = 1
-    print(characters_dict)
-
-    
-get_num_characters("Waffles Yyosef")
+    return characters_dict  
