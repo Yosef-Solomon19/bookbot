@@ -1,10 +1,12 @@
 # stats is the name of the file and count_words is the name of the function you want to import 
 from stats import count_words
+from stats import get_num_characters 
 
 def main():
     file_path = "books/frankenstein.txt"
-    text = get_book_text(file_path)    
-    print(f"{count_words(text)} words found in the document")
+    text = get_book_text(file_path)        
+    characters_result = get_num_characters(text)
+    print(f"{count_words(text)} words found in the document, {characters_result}")
 
 def get_book_text(file_path):
     with open(file_path) as f:
