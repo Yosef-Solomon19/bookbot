@@ -20,3 +20,17 @@ def get_num_characters(text):
             else:
                 characters_dict[character] = 1
     return characters_dict  
+
+
+# Add a new function that takes the dictionary of characters and their counts and returns a sorted list of dictionaries.
+# Create a new function that takes the dictionary of characters and their counts
+# Initalize a new dictionary 
+# Create for loop to get the key and value separately 
+# Create dictionary containing two key-value pairs and add them to the list
+
+def sort_dictionary(dictionary):
+    sorted_dict = []
+
+    
+    print(c_list)
+
