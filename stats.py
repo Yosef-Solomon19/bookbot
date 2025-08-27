@@ -21,12 +21,16 @@ def get_num_characters(text):
                 characters_dict[character] = 1
     return characters_dict  
 
-
+#Part 1 
 # Add a new function that takes the dictionary of characters and their counts and returns a sorted list of dictionaries.
 # Create a new function that takes the dictionary of characters and their counts
 # Initalize a empty list to be sorted
 # Create for loop to get the key and value separately 
 # Create dictionary inside the loop containing two key-value pairs and add them to the list
+
+#Part 2
+#Sort the sorted_dict from greatest to least based on the count
+# If the character is not an alphabetical character just skip it. .isalpha()
 
 def sort_dictionary(dictionary):
     sorted_dict = []
@@ -36,6 +40,13 @@ def sort_dictionary(dictionary):
         print(key)
         c_dict.update({'char': key, 'num': dictionary[key]})
         sorted_dict.append(c_dict)
+    print(sorted_dict)
+    print(sorted_dict[4])
+    for item in sorted_dict:
+        if item["char"].isalpha():
+            print(f"yes - {item}")
+        else:
+            pass
 
     return sorted_dict
 
