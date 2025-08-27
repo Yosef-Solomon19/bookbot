@@ -29,8 +29,8 @@ def get_num_characters(text):
 # Create dictionary inside the loop containing two key-value pairs and add them to the list
 
 #Part 2
+#If the character is not an alphabetical character just skip it. .isalpha() in the for loop.
 #Sort the sorted_dict from greatest to least based on the count
-# If the character is not an alphabetical character just skip it. .isalpha()
 
 def sort_dictionary(dictionary):
     sorted_dict = []
