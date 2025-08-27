@@ -24,13 +24,20 @@ def get_num_characters(text):
 
 # Add a new function that takes the dictionary of characters and their counts and returns a sorted list of dictionaries.
 # Create a new function that takes the dictionary of characters and their counts
-# Initalize a new dictionary 
+# Initalize a empty list to be sorted
 # Create for loop to get the key and value separately 
-# Create dictionary containing two key-value pairs and add them to the list
+# Create dictionary inside the loop containing two key-value pairs and add them to the list
 
 def sort_dictionary(dictionary):
     sorted_dict = []
-
     
-    print(c_list)
+    for key in dictionary:
+        c_dict={}
+        print(key)
+        c_dict.update({'char': key, 'num': dictionary[key]})
+        sorted_dict.append(c_dict)
+
+    return sorted_dict
+
+    # return dictionary
 
