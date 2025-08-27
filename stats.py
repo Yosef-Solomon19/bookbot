@@ -36,16 +36,11 @@ def sort_dictionary(dictionary):
     sorted_dict = []
     
     for key in dictionary:
-        c_dict={}
-        print(key)
-        c_dict.update({'char': key, 'num': dictionary[key]})
-        sorted_dict.append(c_dict)
-    print(sorted_dict)
-    print(sorted_dict[4])
-    for item in sorted_dict:
-        if item["char"].isalpha():
-            print(f"yes - {item}")
-        else:
+        if key.isalpha():
+            c_dict={}
+            c_dict.update({'char': key, 'num': dictionary[key]})
+            sorted_dict.append(c_dict)
+        else: 
             pass
 
     return sorted_dict
