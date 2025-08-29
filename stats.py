@@ -50,3 +50,7 @@ def sort_dictionary(dictionary):
 #helper function 
 def sort_on(item):
     return item["num"]
+
+# Print book report function 
+def print_report(file_path, word_count, sorted_char_count):
+    

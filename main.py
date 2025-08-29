@@ -6,14 +6,12 @@ from stats import sort_dictionary
 def main():
     file_path = "books/frankenstein.txt"
     text = get_book_text(file_path)        
-    characters_result = get_num_characters("This is a textt")
-
-    sorted_list =sort_dictionary(characters_result)
-    print(sorted_list)
+    characters_result = get_num_characters(text)
+    sort_list =sort_dictionary(characters_result)
 
 def get_book_text(file_path):
     with open(file_path) as f:
         file_contents = f.read()
         return file_contents
 
-main()
+print(main())
