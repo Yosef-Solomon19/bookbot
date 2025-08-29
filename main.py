@@ -7,9 +7,9 @@ def main():
     file_path = "books/frankenstein.txt"
     text = get_book_text(file_path)        
     characters_result = get_num_characters("This is a textt")
-    #print(f"{count_words(text)} words found in the document, {characters_result}")
-    x =sort_dictionary(characters_result)
-    print(f"{x}")
+
+    sorted_list =sort_dictionary(characters_result)
+    print(sorted_list)
 
 def get_book_text(file_path):
     with open(file_path) as f:

@@ -33,17 +33,20 @@ def get_num_characters(text):
 #Sort the sorted_dict from greatest to least based on the count
 
 def sort_dictionary(dictionary):
-    sorted_dict = []
+    sort_dict = []
     
     for key in dictionary:
         if key.isalpha():
             c_dict={}
             c_dict.update({'char': key, 'num': dictionary[key]})
-            sorted_dict.append(c_dict)
+            sort_dict.append(c_dict)
         else: 
             pass
-
-    return sorted_dict
+    sort_dict.sort(reverse=True, key=sort_on)
+    return sort_dict
 
     # return dictionary
 
+#helper function 
+def sort_on(item):
+    return item["num"]
