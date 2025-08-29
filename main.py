@@ -2,6 +2,7 @@
 from stats import count_words
 from stats import get_num_characters 
 from stats import sort_dictionary
+from stats import print_report
 
 def main():
     file_path = "books/frankenstein.txt"

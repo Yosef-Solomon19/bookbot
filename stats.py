@@ -20,6 +20,7 @@ def get_num_characters(text):
             else:
                 characters_dict[character] = 1
     return characters_dict  
+    print(characters_dict)
 
 #Part 1 
 # Add a new function that takes the dictionary of characters and their counts and returns a sorted list of dictionaries.
@@ -52,5 +53,14 @@ def sort_on(item):
     return item["num"]
 
 # Print book report function 
-def print_report(file_path, word_count, sorted_char_count):
-    
+def print_report(file_path, word_count, char_count):
+
+    report = f"""
+    ============ BOOKBOT ============
+    Analyzing book found at {file_path}
+    ----------- Word Count ----------
+    Found {word_count} total words 
+    --------- Character Count -------
+    """
+    for c in char_count:
+        print(c["char"], c["num"])
