@@ -55,12 +55,12 @@ def sort_on(item):
 # Print book report function 
 def print_report(file_path, word_count, char_count):
 
-    report = f"""
-    ============ BOOKBOT ============
-    Analyzing book found at {file_path}
-    ----------- Word Count ----------
-    Found {word_count} total words 
-    --------- Character Count -------
-    """
+    report = f"""============ BOOKBOT ============
+Analyzing book found at {file_path}
+----------- Word Count ----------
+Found {word_count} total words 
+--------- Character Count -------
+"""
     for c in char_count:
-        print(c["char"], c["num"])
+        print(f"{c["char"]}: {c["num"]}")
+        

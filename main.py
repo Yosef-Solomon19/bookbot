@@ -9,10 +9,13 @@ def main():
     text = get_book_text(file_path)        
     characters_result = get_num_characters(text)
     sort_list =sort_dictionary(characters_result)
+    num_words=count_words(text)
+    book_report = print_report(file_path, num_words, sort_list )
+    return book_report
 
 def get_book_text(file_path):
     with open(file_path) as f:
         file_contents = f.read()
         return file_contents
 
-print(main())
+main()
